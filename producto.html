@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiendaFRONTED</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:wght@300&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../asest/favicon-16x16.png" type="image/x-icon">
+</head>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <a href="resell-tech.html"><h1>ressell-tech</h1></a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class="navegacion__enlace " href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor-producto">
+        <h1>React</h1>
+
+        <div class="camisa">
+            <img src="img/3.jpg" alt="camisa de React">
+            <div class="camisa__contenido">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta obcaecati praesentium quos eos soluta, alias autem possimus adipisci asperiores eveniet illum eum minus sit impedit, illo minima perferendis commodi. Voluptate.</p>
+                <form class="camisa  formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>--seleccionar talla--</option>
+                        <option >grnade</option>
+                        <option >mediana</option>
+                        <option >pequeña</option>
+                    </select>
+                    <input class="formulario__campo" type="number" min="1" placeholder="cantidad">
+                    <input class="formulario__submit" id="1"type="submit" value="agregar al carrito">
+                </form>
+                
+                
+            </div>
+
+            
+        </div>
+    </main>
+
+    <footer class="footer"><p class="footer__text">TiendaFRONTED--Todos los derechos reservados</p></footer>
+    <script>
+        const input= document.querySelector('#1')
+        input.addEventListener('click',()=>alert('gracias por su compra'))
+
+    </script>
+</body>
+</html>
