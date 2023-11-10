@@ -10,28 +10,150 @@
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:wght@300&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css"  rel="stylesheet" />
     <link rel="shortcut icon" href="../asest/favicon-16x16.png" type="image/x-icon">
 </head>
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <header class="header">
-        <a href="resell-tech.html"><h1>ressell-tech</h1></a>
-    </header>
 
-    <nav class="navegacion">
-        <a class="navegacion__enlace navegacion__enlace--activo" href="resell-tech.html">Tienda</a>
-        <a class="navegacion__enlace " href="nosotros.html">Nosotros</a>
-            
-        
-    </nav>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="/index.html" class="flex items-center">
+         
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white ">resselltech</span>
+        </a>
+        <div class="flex md:order-2">
+          <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1" >
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>
+            <span class="sr-only">Buscar</span>
+          </button>
+          <div class="relative hidden md:block">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+              <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+              </svg>
+              <span class="sr-only">Search icon</span>
+            </div>
+           
+<form>   
+    <label for="search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+    <div class="relative">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>
+        </div>
+        <input type="search" id="search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required>
+        <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+    </div>
+</form>
+
+          </div>
+          <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
+             
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+        </div>
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+            <div class="relative mt-3 md:hidden">
+              <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
+              </div>
+              <input type="text" id="search-navbar" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+            </div>
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page"></a>
+              </li>
+              <li>
+                <a href="index.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">home</a>
+              </li>
+              <li>
+                <a href="nosotros.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Nosotros</a>
+              </li>
+              <li>
+                <a href="index.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">salir</a>
+              </li>
+              <li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- carrusel -->
+
+
+      
+      <div id="default-carousel" class="relative w-full pt-16  border-10 " data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96 ">
+             <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./FrontEndStore_inicio/img/software-developer-6521720_640.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./FrontEndStore_inicio/img/Ecommerce-web.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./FrontEndStore_inicio/mother-board-5384830_640.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./FrontEndStore_inicio/img/pro-x-keyboard-gallery-2.png.imgw_.1384.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./FrontEndStore_inicio/img/R.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+      
 
     <main class="contenedor">
         <h1>Nuestros Productos</h1>
+
+
+
+        
         <div class="grid">
             <div class="Producto">
-                <a href="producto.html">
+                <a class="cuadrado" href="producto.html">
                     <img   class="producto__imagen "src="/img/OIP (2).jpeg" alt="imagen camisa">
                     <div class="producto__info">
                     <p class="producto__name">asus vivooo</p>
@@ -42,10 +164,10 @@
 
 
             <div class="Producto" >
-                <a href="producto.html">
-                    <img   class="producto__imagen "src="FrontEndStore_inicio/img/2.jpg" alt="imagen camisa">
+                <a class="cuadrado" href="producto.html">
+                    <img   class="producto__imagen "src="FrontEndStore_inicio/img/pcgjpeg.jpeg" alt="imagen camisa">
                     <div class="producto__info">
-                    <p class="producto__name">Angular</p>
+                    <p class="producto__name">Gabinete gamer</p>
                     <p class="producto__precio">$255</p>
                 </div>
                 </a>
@@ -53,10 +175,10 @@
 
 
             <div class="Producto">
-                <a href="producto.html">
-                    <img   class="producto__imagen "src="FrontEndStore_inicio/img/3.jpg" alt="imagen camisa">
+                <a class="cuadrado" href="producto.html">
+                    <img   class="producto__imagen "src="FrontEndStore_inicio/img/Sin título.jpeg" alt="imagen camisa">
                     <div class="producto__info">
-                    <p class="producto__name">React</p>
+                    <p class="producto__name">Memory Ram 16g</p>
                     <p class="producto__precio">$300</p>
                 </div>
                 </a>
@@ -64,7 +186,7 @@
     
 
             <div class="Producto">
-                <a href="producto.html">
+                <a class="cuadrado" href="producto.html">
                     <img   class="producto__imagen "src="/img/OIP (3).jpeg" alt="imagen camisa">
                     <div class="producto__info">
                     <p class="producto__name">play stacion 5</p>
@@ -74,17 +196,17 @@
             </div>
 
             <div class="Producto">
-                <a href="producto.html">
-                    <img   class="producto__imagen "src="FrontEndStore_inicio/img/5.jpg" alt="imagen camisa">
+                <a class="cuadrado"href="producto.html">
+                    <img   class="producto__imagen "src=".//FrontEndStore_inicio/img/dsd.jpeg" alt="imagen camisa">
                     <div class="producto__info">
-                    <p class="producto__name">Node.js</p>
+                    <p class="producto__name">Torre</p>
                     <p class="producto__precio">$25</p>
                 </div>
                 </a>
             </div>
 
             <div class="Producto">
-                <a href="producto.html">
+                <a class="cuadrado"href="producto.html">
                     <img   class="producto__imagen "src="/img/OIP (4).jpeg" alt="imagen camisa">
                     <div class="producto__info">
                     <p class="producto__name">nintendo switch</p>
@@ -94,7 +216,7 @@
             </div>
 
             <div class="Producto">
-                <a href="producto.html">
+                <a class="cuadrado"href="producto.html">
                     <img   class="producto__imagen "src="/img/OIP.jpeg" alt="imagen camisa">
                     <div class="producto__info">
                     <p class="producto__name">HP ezonia</p>
@@ -104,83 +226,83 @@
             </div>
 
             <div class="Producto">
-                <a href="producto.html">
-                    <img   class="producto__imagen "src="FrontEndStore_inicio/img/8.jpg" alt="imagen camisa">
+                <a class="cuadrado"href="producto.html">
+                    <img   class="producto__imagen "src="./FrontEndStore_inicio/img/torre.jpeg" alt="imagen camisa">
                     <div class="producto__info">
-                    <p class="producto__name">GitHUd</p>
+                    <p class="producto__name">Torre pre armada</p>
                     <p class="producto__precio">$45</p>
                 </div>
                 </a>
             </div>
 
             <div class="Producto">
-                <a href="producto.html">
+                <a class="cuadrado" href="producto.html">
                     <img   class="producto__imagen "src="/img/OIP (1).jpeg" alt="imagen camisa">
                     <div class="producto__info">
                     <p class="producto__name">Hp 2015</p>
                     <p class="producto__precio">$250</p>
-                    <p class="description">computador usado</p>
+               
                 </div>
                 </a>
             </div>
 
             <div class="Producto">
-                <a href="producto.html">
-                    <img   class="producto__imagen "src="FrontEndStore_inicio/img/10.jpg" alt="imagen camisa">
+                <a class="cuadrado"href="producto.html">
+                    <img   class="producto__imagen "src="FrontEndStore_inicio/img/lg26.jpeg" alt="imagen camisa">
                     <div class="producto__info">
-                    <p class="producto__name">Typescript</p>
+                    <p class="producto__name">Moitor lg 26"</p>
                     <p class="producto__precio">$250</p>
                 </div>
                 </a>
             </div>
     
             <div class="Producto">
-                <a href="producto.html">
-                    <img   class="producto__imagen "src="FrontEndStore_inicio/img/11.jpg" alt="imagen camisa">
+                <a class="cuadrado"href="producto.html">
+                    <img   class="producto__imagen "src="FrontEndStore_inicio/img/mlg.jpeg" alt="imagen camisa">
                     <div class="producto__info">
-                    <p class="producto__name">Drupal</p>
+                    <p class="producto__name">Moouse logitec</p>
                     <p class="producto__precio">$25</p>
                 </div>
                 </a>
             </div>
     
             <div class="Producto">
-                <a href="producto.html">
-                    <img   class="producto__imagen "src="FrontEndStore_inicio/img/12.jpg" alt="imagen camisa">
+                <a class="cuadrado" href="producto.html">
+                    <img   class="producto__imagen "src="./FrontEndStore_inicio/img/OIP (2).jpeg">
                     <div class="producto__info">
-                    <p class="producto__name">Javascript</p>
-                    <p class="producto__precio">$30</p>
+                    <p class="producto__name">Ventilador de pc</p>
+                    <p class="producto__precio">$300</p>
                 </div>
                 </a>
             </div>
     
             <div class="Producto">
-                <a href="producto.html">
-                    <img   class="producto__imagen "src="FrontEndStore_inicio/img/13.jpg" alt="imagen camisa">
+                <a class="cuadrado" href="producto.html">
+                    <img   class="producto__imagen "src="FrontEndStore_inicio/img/OIP (3).jpeg" alt="imagen camisa">
                     <div class="producto__info">
-                    <p class="producto__name">GrapQL</p>
+                    <p class="producto__name">Medidor de voltaje</p>
                     <p class="producto__precio">$25</p>
                 </div>
                 </a>
             </div>
     
             <div class="Producto">
-                <a href="producto.html">
-                    <img   class="producto__imagen "src="FrontEndStore_inicio/img/14.jpg" alt="imagen camisa">
+                <a class="cuadrado"href="producto.html">
+                    <img   class="producto__imagen "src="FrontEndStore_inicio/img/descargar.jpeg" alt="imagen camisa">
                     <div class="producto__info">
-                    <p class="producto__name">Worpres</p>
+                    <p class="producto__name">Auriculares gamer</p>
                     <p class="producto__precio">$25</p>
                 </div>
                 </a>
             </div>
             
-            <div class="grafico grafico--camisas"></div>
-            <div class="grafico grafico--node"></div>
+            
         </div>
         
     </main>
-
-    <footer class="footer"><p class="footer__text">TiendaFRONTED--Todos los derechos reservados</p></footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    
     <script src="index.js"></script>
 </body>
 </html>

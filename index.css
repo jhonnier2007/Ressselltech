@@ -1,333 +1,35 @@
-*{box-sizing: border-box;
 
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    color: black;
 }
-
-body{
-    font-family: sans-serif;
-    margin: 0;
-
-}
-
-h1{ font-size: 2.5em;}
-h2{font-size: 1.5em;}
-h3{font-size: 1.5em;}
-p{font-size: 1em;}
-ul{list-style:none;}
-
-
-
-
-button{ 
-    font-size:1.5em ;
-    font-size:bold;
-    padding: 10px 20px;
-    border-radius: 15px ;
-    border: 1px solid rgb(0,0, 0.5);
-    background-color: rgb(25, 181, 205);
-    transition-duration: 1000;
-}
-button:hover{ background-color: rgb(6, 161, 218);
-}
-button a{ text-decoration: none;
+p{
+    padding:45px;
+  text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
     font-weight: bold;
     color: black;
-    
-}
-.container{
-    max-width: 1400px;
-    margin:auto;
-    
 }
 
-.color-acento{ color: rgb(32, 136,58);}
-header{
-    background-color: rgb(0, 0, 0);
-}
-header .logo{
-    margin: 0;
-    padding:25px 30px ;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    font-size: 3.5em;
-}
-
-
-header.container{
+.img{
     display: flex;
-    flex-direction:column;
+    justify-content: center;
     align-items: center;
 }
-header nav{
-    display:flex;
-    flex-direction:column;
-text-align: center;
-padding-bottom: 25px;}
 
-header a{padding: 5px 12px;
-text-decoration: none;
-font-weight:bold;
-color: rgb(255, 251, 251);}
-
-header a:hover{
-    color: rgb(166, 231, 38);
-
+.img img{
+    height: 300px;
+    width: 300px;
+    padding: 45px;
+    border: 2px solid #000;
+    border-radius: 10px;
 }
-#hero{text-align: center;
-    display:flex;
-    flex-direction: column;
-    height: 70%;
-    color:white;
-  background-color: black;
-    
-    background-repeat: no-repeat;
-    background-size:cover ;
-    background-position: center,center;
-}
-#hero h1{
-    color: white;
-}
-.texto{text-align:center;
-        padding: auto;
-    }
-@media (maz-widht:900px) {
-    .texto p{
-        padding-bottom: 0px;
-
-    
-    }
-    
-    
-}
-
-
-
-
-#NUESTRAS-VERSIONES{
-    background-color: rgb(30,30,30);
-    color: white;
-    text-align: center;
-}
-
-#NUESTRAS-VERSIONES .container{
-    padding: 100px 20px;
-}
-#NUESTRAS-VERSIONES h2{
-    margin-top: 0;
-    font-size: 3em;
-}
-
-#NUESTRAS-VERSIONES p{
-    display: none;
-}
-#NUESTRAS-VERSIONES .carta{
-    background-position: center center;
-    background-size: cover;
-    padding: 50px;
-    margin: 21px;
-    border-radius:20px ;
-}
-
-
-.carta:first-child{
-    background-image:linear-gradient(  0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5))
-    ,url("/imagenes/children-306607__340.jpg");
-
-}
-.carta:nth-child(2){background-image:linear-gradient(  0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5))
-    ,url("/imagenes/versionPRO.jpg");
-
-
-}
-.carta:nth-child(3){background-image:linear-gradient(  0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5))
-    ,url("/imagenes/books-1617327__340.jpg");}
-
-    .carta:nth-child(4){background-image:linear-gradient(  0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5))
-        ,url("imagenes/niños.jpg");}
-
-#caracteristicas .container{background-image: url("imagenes/istockphoto-594484448-612x612.jpg");
-        text-align: center;
-        padding: 250px 12px;
-    }
-#caracteristicas li{
-        margin: 20px 0px;
-        font-weight: bold;
-    }
-    
-footer{
-background-color:rgb(85, 85, 81);
-font-weight: bold;
-font-size: 1em;
-
-    }
-
-footer p{
-        margin: auto;
-        color: rgb(red);
-
-}
-
-footer .container{
-        height: 85px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end; }
-
-        @media(min-height:1024px){
-            #hero{
-                display:flex;
-                align-content:center;
-                text-align: center;
-                flex-direction:center;
-                height: 85%;
-                color:white;
-                background-image:linear-gradient(
-                    0deg,
-                    rgba(0,0,0,0.5),
-                    rgba(0,0,0,0.5)
-                ) 
-                ,url("imagenes/LORA\ tu\ biblioteca\ a\ la\ mano.jpg");
-                background-repeat: no-repeat;
-                background-size:cover ;
-                background-position: center,center;
-            }
-            
-            #hero h1{
-                color: white;
-            font-size: 5em;}
-            
-            header.container{
-                flex-direction:row;
-                justify-content:space-between;
-    
-            }
-            header nav{
-                flex-direction:row-reverse;
-                padding-bottom: 0px;
-                padding-right:  20px;
-            }
-            
-    
-.texto{
-            background-color: #fff;
-            padding-left:  205px;
-            background-repeat: no-repeat;
-            padding: auto;
-            height: 170px;
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif; }
-    
-#NUESTRAS-VERSIONES .programas{
-            display: flex;
-            justify-content: center;
-}     
-#NUESTRAS-VERSIONES p{
-            display: block;
-            margin-bottom: 30px;
-        }
-#NUESTRAS-VERSIONES h3{
-            margin-top: 0px;
-}
-#NUESTRAS-VERSIONES.carta{
-            padding: 10px;
-            }
-#caracteristicas{
-    
-            background-image: url("imagenes/istockphoto-594484448-612x612.jpg");
-            }
-            #caracteristicas ul{
-                font-size: 2em;
-    
-            }
-            #footer .container{
-                justify-content:flex-end;
-            }
-        }
-    
-        
-
-            
-        
-    @media(min-width:720px){
-        #hero{
-            display:flex;
-            align-content:center;
-            text-align: center;
-            flex-direction:center;
-            height: 85%;
-            color:white;
-            background-image:linear-gradient(
-                0deg,
-                rgba(0,0,0,0.5),
-                rgba(0,0,0,0.5)
-            ) 
-            ,url("/imagenes/LORA\ tu\ biblioteca\ a\ la\ mano.jpg");
-            background-repeat: no-repeat;
-            background-size:cover ;
-            background-position: center,center;
-        }
-        
-        #hero h1{
-            color: white;
-        font-size: 5em;}
-        
-        header.container{
-            flex-direction:row;
-            justify-content:space-between;
-
-        }
-        header nav{
-            flex-direction:row-reverse;
-            padding-bottom: 0px;
-            padding-right:  20px;
-        }
-        
-
-.texto{background-image: url("imagenes/Diseño\ sin\ título.png"); 
-    
-        padding: left 45px;
-        background-repeat: no-repeat;
-        padding: auto;
-        height: 170px;
-        font-weight: bold;
-        font-family: Arial, Helvetica, sans-serif; }
-
-#NUESTRAS-VERSIONES .programas{
-        display: flex;
-        justify-content: center;
-}     
-#NUESTRAS-VERSIONES p{
-        display: block;
-        margin-bottom: 30px;
-    }
-#NUESTRAS-VERSIONES h3{
-        margin-top: 0px;
-}
-#NUESTRAS-VERSIONES.carta{
-        padding: 10px;
-        }
-#caracteristicas{
-
-        background-image: url("imagenes/istockphoto-594484448-612x612.jpg");
-        }
-        #caracteristicas ul{
-            font-size: 2em;
-
-        }
-        #footer .container{
-            justify-content:flex-end;
-        }
-    }
-
-
-
 
     
 

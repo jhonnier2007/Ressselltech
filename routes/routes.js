@@ -5,7 +5,7 @@ const router = Router();
 
 
 router.get("/nosotros", (req, res) => res.send("../nosotros.html"));
-router.get("/inicio", (req, res) => res.send("wedhook"));
+router.get("/inicio", (req, res) => res.send("../index.html"));
 router.get("/reselltech", (req, res) => res.send("../resell-tech.html"));
 
 export default router;
